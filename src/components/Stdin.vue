@@ -7,8 +7,8 @@
       class="term-ps">
       <slot
         name="prompt"
-        :prompt="prompt">
-        {{ prompt }}
+        :prompt="localPrompt">
+        {{ localPrompt }}
       </slot>
     </span>
     <span class="term-stdin">
