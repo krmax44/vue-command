@@ -46,7 +46,13 @@
               :uid="_uid"
               @cursor="setCursor"
               @handle="handle"
-              @typing="setCurrent" />
+              @typing="setCurrent">
+              <template v-slot:prompt="prompt">
+                <slot
+                  name="prompt"
+                  :prompt="prompt" />
+              </template>
+            </stdin>
           </div>
         </div>
       </div>

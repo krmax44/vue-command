@@ -5,7 +5,11 @@
     <span
       v-if="!hidePrompt"
       class="term-ps">
-      {{ prompt }}
+      <slot
+        name="prompt"
+        :prompt="prompt">
+        {{ prompt }}
+      </slot>
     </span>
     <span class="term-stdin">
       <input
